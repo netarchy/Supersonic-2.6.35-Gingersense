@@ -1356,6 +1356,14 @@ config MSM_CPU_FREQ_SCREEN_ON
 
 endif # MSM_CPU_FREQ_SCREEN
 
+config STATIC_UNDERVOLTING
+	bool "Enable SVS undervolting"
+	depends on (ARCH_MSM_SCORPION)
+	default y
+	help
+	  This enables undervolting of the cpu when using
+	  Static Voltage Scaling
+
 config MSM_CPU_FREQ_ONDEMAND_MAX
 	int "Max"
 	default 384000
