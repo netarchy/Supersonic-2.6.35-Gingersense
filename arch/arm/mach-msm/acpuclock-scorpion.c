@@ -179,8 +179,8 @@ static void __init acpuclk_init_cpufreq_table(void)
 		}
 
 		/* Take the fastest speed available at the specified VDD level */
-		if (vdd != acpu_freq_tbl[i + 1].vdd)
-			freq_table[i].frequency = acpu_freq_tbl[i].acpu_khz;
+//		if (vdd != acpu_freq_tbl[i + 1].vdd)
+		freq_table[i].frequency = acpu_freq_tbl[i].acpu_khz;
 	}
 
 	freq_table[i].index = i;
